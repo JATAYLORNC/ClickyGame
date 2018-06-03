@@ -1,0 +1,14 @@
+.header {
+  background-image: url("../images/disney-backgrounds.jpg");
+  min-height: 400px;
+}
+
+.header h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

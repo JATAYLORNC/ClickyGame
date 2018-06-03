@@ -1,0 +1,12 @@
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+#confirmGuess, #scoreBoard {
+  font-size: 1.8rem;
+}
+
+#myNavbar {
+  background-color: #C10CE8;
+}

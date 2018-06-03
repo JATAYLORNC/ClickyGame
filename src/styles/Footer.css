@@ -1,0 +1,12 @@
+#footer {
+  background-color: #C10CE8;
+  min-height: 70px;
+  line-height: 70px;
+  margin: 0;
+  font-weight: 700;
+}
+
+#reactLogo {
+  display: inline;
+  padding: 0;
+}
