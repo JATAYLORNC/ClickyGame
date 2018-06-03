@@ -1,0 +1,19 @@
+#GameBoard {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.board-row {
+  padding-top: 1rem;
+  background: #ECEFF1;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  padding-bottom: 1rem;
+  justify-content: space-around;
+  align-items: flex-center;
+  overflow: auto;
+}

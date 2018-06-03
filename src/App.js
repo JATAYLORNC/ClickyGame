@@ -2,14 +2,14 @@ import React from 'react';
 import Wrapper from "./components/Wrapper";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import Container from "./components/Container";
-import CharacterCard from "./components/CharacterCard";
+import GameBoard from "./components/GameBoard";
 import Footer from "./components/Footer";
-import characters from "./characters.js"
 
 class App extends React.Component {
   state = {
-    characters: characters
+    status: "Click an image to begin!",
+    currentScore: 0,
+    topScore: 0
   };
 
   render() {
@@ -17,15 +17,7 @@ class App extends React.Component {
       <Wrapper>
         <Navbar />
         <Header />
-        <Container>
-          {this.state.characters.map(character => (
-            <CharacterCard 
-                _id={character.id}
-                name={character.name}
-                image={character.image}
-              />
-          ))}
-        </Container>
+        <GameBoard />
         <Footer />
       </Wrapper>
     )
