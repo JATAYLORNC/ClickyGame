@@ -1,12 +1,66 @@
 .navbar-brand {
   font-weight: 800;
   font-size: 1.8rem;
+  line-height: 50px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 #confirmGuess, #scoreBoard {
   font-size: 1.8rem;
+  line-height: 50px;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 #myNavbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 50px;
   background-color: #C10CE8;
+}
+
+@media screen and (max-width: 980px) and (min-width: 769px) {
+
+  #confirmGuess, #scoreBoard {
+    font-size: 1.4rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 640px) {
+
+  #confirmGuess, #scoreBoard {
+    font-size: 1.1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 639px) and (min-width: 421px) {
+
+  #confirmGuess, #scoreBoard {
+    font-size: 0.7rem;
+  }
+
+  .navbar-brand {
+    font-size: 0.7rem;
+  }  
+}
+
+@media screen and (max-width: 420px) {
+
+  #confirmGuess, #scoreBoard {
+    font-size: 0.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 0.5rem;
+  }  
 }

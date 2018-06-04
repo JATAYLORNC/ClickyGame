@@ -1,19 +1,31 @@
 #GameBoard {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left:18%;
+  padding-right: 18%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 
-.board-row {
+#board-row-1, #board-row-2 {
   padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background: #ECEFF1;
   height: 100%;
   display: flex;
   flex-flow: row nowrap;
-  padding-bottom: 1rem;
   justify-content: space-around;
   align-items: flex-center;
-  overflow: auto;
+  /* overflow: auto; */
+}
+
+#board-row-3 {
+  padding: 1rem;
+  background: #ECEFF1;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-center;
+  /* overflow: auto; */
 }
