@@ -1,3 +1,6 @@
+//images have to be imported since React does not recognize a local path for the image source attribute
+//As such, this needed to be a js file instead of a JSON object file.
+
 import mickey from "./images/mickey.png"; 
 import minnie from "./images/minnie.png";
 import flower from "./images/flower.png";
@@ -11,7 +14,9 @@ import marie from "./images/marie.png";
 import lilo from "./images/lilo.png";
 import berlioz from "./images/berlioz.png";
  
- export default [
+
+//export the JSON object array containing character ID, name, and image location information
+export default [
   {
     "_id": 0,
     "name": "Mickey Mouse",

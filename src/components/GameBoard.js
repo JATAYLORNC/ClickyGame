@@ -11,12 +11,15 @@ class GameBoard extends React.Component {
     charGuess: []
   };
 
+  //method that returns the character block component for a character in the characters array 
   renderSquare = (i) => {
 
     return <CharacterBlock image={this.state.characters[i].image} name={this.state.characters[i].name} id={this.state.characters[i]._id} addCharGuess={this.addCharGuess} />;
 
   }
 
+  //function to randomly shuffle the location array index numbers related to where the image is located
+  //in the grid
   shuffleLocation = () => {
 
     let location = this.state.location;
@@ -35,8 +38,11 @@ class GameBoard extends React.Component {
     return location;
   }
 
+  //method that renders the game board
   renderGameBoard = () => {
 
+    //variable to call shuffleLocation method and hold resulting array
+    //Note:  this could have also been used to modify the location key in state
     let blockLocation = this.shuffleLocation();      
 
     return (
@@ -64,6 +70,9 @@ class GameBoard extends React.Component {
     )
   }
 
+  //method that checks if the character ID is already included in the array of character IDs
+  //previously guessed and based on that response either clears that charGuess array and resets the score
+  //or increments the score and adds the character ID to the array of previous guesses
   addCharGuess = (charID) => {
 
     if(this.state.charGuess.includes(charID)) {
