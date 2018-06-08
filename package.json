@@ -2,6 +2,7 @@
   "name": "clickygame",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jataylornc.github.io/ClickyGame/",
   "dependencies": {
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
